@@ -16,9 +16,9 @@ while True:
         stmt.append(parse(input()))
     except KeyboardInterrupt:
         break
-print("Built:",build_stmts(stmts))##ERROR;A list does not work
+print("Built:",build_stmts(stmts))##A list worls
 filename = input("Filename:")
-print(build_stmts(parse(open(filename).read())))#ast.Module objects work
+print(build_program(parse(open(filename).read())))#ast.Module objects work with build_program
 
 print(reformat(stmt))#Automatically parses and builds;works for full programs/expressions/statements
 ```
