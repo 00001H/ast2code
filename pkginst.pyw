@@ -1,4 +1,4 @@
-import os
+import os,sys
 from tkinter import *
 SOURCE = "ast2code.py"
 NAME = "ast2code"
